@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body>
+  <div class="root">
+    <header class="header root__section">
+      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+    </header>
+    <div class="profile root__section">
+      <div class="user-info">
+        <div class="user-info__photo"></div>
+        <div class="user-info__data">
+          <h1 class="user-info__name">Jaques Causteau</h1>
+          <p class="user-info__job">Sailor, Researcher</p>
+          <button class="user-info__profile">Edit</button>
+        </div>
+        <button class="button user-info__button">+</button>
+      </div>
+    </div>
+
+    <div class="places-list root__section">
+    </div>
+
+    <div class="zoom">
+      <div class="zoom__content">
+        <img src="./images/close.svg" alt="" class="zoom__close">
+      </div>
+    </div>  
+
+    <div class="popup">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close">
+        <h3 class="popup__title">Новое место</h3>
+        <form class="popup__form" name="new">
+            <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название">
+            <input type="url" name="link" class="popup__input popup__input_type_link-url" placeholder="Ссылка на картинку" required>
+            <button type class="button popup__button popup__button_disabled" disabled>+</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="edit">
+      <div class="edit__content">
+        <img src="./images/close.svg" alt="" class="edit__close">
+        <h3 class="edit__title">Редактировать профиль</h3>
+        <form class="edit__form" name="user">
+            <input type="text" id="name1" required name="name1" class="edit__input" placeholder="Имя" minlength="2">
+            <span id="error-name1" class="edit__error-message"></span>
+            <input type="text" id="job" required name="job" class="edit__input" placeholder="О себе" minlength="2">
+            <span id="error-job" class="edit__error-message"></span>
+           <button type="submit" id="submit" class="button edit__button edit__button_disabled" disabled>Сохранить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

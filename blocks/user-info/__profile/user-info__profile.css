@@ -1,0 +1,16 @@
+.user-info__profile {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    height: 30px;
+    width: 60px;
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+.user-info__profile:hover {
+    background-color: white;
+    color: black;
+  }

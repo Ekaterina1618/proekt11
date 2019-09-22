@@ -1,0 +1,14 @@
+.edit__button {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    border: 1px solid rgba(0, 0, 0, .2);
+    margin-top: 48px;
+    color: white;
+    font-size: 20px;
+  }
+
+  .edit__button_disabled {
+    background-color: white;
+    color: rgba(0, 0, 0, .2);
+  }
